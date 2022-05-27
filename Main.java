@@ -106,15 +106,16 @@ public class Main implements ActionListener, KeyListener {
         startGame.addActionListener(this);
         topPanel.add(startGame);
         
-        /**
+        f.getContentPane();
         tutorial = new JButton("Tutorial");
         tutorial.setBackground(Color.BLUE);
         tutorial.setForeground(Color.WHITE);
         tutorial.setFocusable(false);
-        tutorial.setFont(new Font("Calibri", Font.PLAIN, 30));
-        tutorial.setBounds(40, 30, 200, 40);
+        tutorial.setFont(new Font("Agency FB", Font.PLAIN, 30));
+        tutorial.setBounds(300,50,40,30);
         tutorial.addActionListener(this);
-        topPanel.add(tutorial);*/
+        topPanel.add(tutorial);
+        
         
         //must add last to ensure button's visibility
         screen = new ScreenGraphics(SCREEN_WIDTH, SCREEN_HEIGHT, true); //true --> we want screen to be the splash screen
